@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<link rel="stylesheet" href="styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos - Naala Residencial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="homepage.html" class="logo" id="logoLink">
+            <img src="https://i.postimg.cc/xC0PwGP2/Naala-Logo.png" alt="Naala Logo" />
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#amenities">Amenidades</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="modelos.html">Modelos</a></li>
+                <li><a href="#contact" class="cta-button">Cotiza Aquí</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content for Modelos -->
+    <section class="landing" id="modelos">
+        <div class="container">
+            <h2 class="section-title">Nuestros Modelos de Casas</h2>
+            <p class="catalog-description">
+                Explora nuestros diferentes modelos de casas, diseñados para adaptarse a tus necesidades y estilo de vida.
+            </p>
+    
+            <div class="model-list">
+                <!-- Model 1 -->
+                <div class="model-item" id="model1">
+                    <div class="model-title">
+                        <h3>Modelo Casa 1</h3>
+                    </div>
+                    <div class="model-details">
+                        <img src="path_to_image_1.jpg" alt="Modelo Casa 1" class="model-image">
+                        <p class="model-description">Descripción detallada del Modelo Casa 1. Puedes agregar más texto aquí, describiendo las características del modelo, la distribución de los espacios, y cualquier detalle adicional que quieras resaltar.</p>
+                        <a href="#" class="cta-button">Ver más detalles</a>
+                    </div>
+                </div>
+    
+                <!-- Model 2 -->
+                <div class="model-item" id="model2">
+                    <div class="model-title">
+                        <h3>Modelo Casa 2</h3>
+                    </div>
+                    <div class="model-details">
+                        <img src="path_to_image_2.jpg" alt="Modelo Casa 2" class="model-image">
+                        <p class="model-description">Descripción detallada del Modelo Casa 2. Agrega aquí información sobre las características del modelo.</p>
+                        <a href="#" class="cta-button">Ver más detalles</a>
+                    </div>
+                </div>
+    
+                <!-- Model 3 -->
+                <div class="model-item" id="model3">
+                    <div class="model-title">
+                        <h3>Modelo Casa 3</h3>
+                    </div>
+                    <div class="model-details">
+                        <img src="path_to_image_3.jpg" alt="Modelo Casa 3" class="model-image">
+                        <p class="model-description">Descripción detallada del Modelo Casa 3. Incluir detalles sobre materiales, distribución y más.</p>
+                        <a href="#" class="cta-button">Ver más detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-left">
+            <div class="footer-logo">Naala</div>
+            <div class="footer-links">
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Declaración de accesibilidad</a>
+            </div>
+            
+            <div class="location-section">
+                <div class="location-title">Ubicación</div>
+                <div class="location-info">
+                    <p>Ruta 119, Heredia, Santa</p>
+                    <p>Bárbara, 40401</p>
+                </div>
+            </div>
+            
+            <div class="contact-section">
+                <div class="contact-title">Contacto</div>
+                <div class="contact-info">
+                    <p>@naalaheredia</p>
+                    <p>+506 8677-1120</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d982.2442043421058!2d-84.1593409663845!3d10.018771534470243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fb7fa497690f%3A0x5683d09c534e44d9!2sNaala!5e0!3m2!1ses-419!2scr!4v1744666142724!5m2!1ses-419!2scr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modelos to Homepage Animation-->
+    <script>
+        const logo = document.getElementById("logoLink");
+      
+        logo.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.body.classList.add("fade-out");
+          setTimeout(() => {
+            window.location.href = "homepage.html";
+          }, 500); // Matches fadeOut duration
+        });
+      </script>
+
+    <!-- Expand/Collapse effect for Models -->
+    <script>
+        // Function to toggle the details section on click
+        const modelItems = document.querySelectorAll('.model-item');
+    
+        modelItems.forEach(item => {
+            item.addEventListener('click', () => {
+                // Toggle active class to expand/collapse
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+</html>

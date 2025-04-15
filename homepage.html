@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naala - Residencial en Heredia</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="#" class="logo">
+            <img src="https://i.postimg.cc/xC0PwGP2/Naala-Logo.png" alt="Naala Logo" />
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#amenities">Amenidades</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="modelos.html" id="modelos-link">Modelos</a></li>
+                <li><a href="#contact" class="cta-button">Cotiza Aquí</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Social Icons -->
+    <div class="social-icons">
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">Heredia</h1>
+            <p class="hero-price">Desde $146,000 *</p>
+            <p class="hero-desc">Viví una experiencia única rodeado de la naturaleza y tranquilidad.</p>
+            
+            <form class="hero-form">
+                <input type="text" placeholder="Nombre" required>
+                <input type="text" placeholder="Apellidos" required>
+                <input type="email" placeholder="Correo" required>
+                <input type="tel" placeholder="Numero de Teléfono" required>
+                <input type="date" placeholder="Fecha para la cita" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        
+        <!-- Project Description with urbania logo inside -->
+        <div class="hero-right">
+            <div class="urbanialogo">
+              <img src="https://i.postimg.cc/pX39YnJ2/Urbania-T.png" alt="Logo Urbania">
+            </div>
+            <div class="project-description">
+              <p>
+                Ubicado del Vindi de San Joaquín 1.5K al Noroeste, Nȧala es un proyecto residencial innovador que se desarrolla en un terreno de 10 hectáreas. Dividido en dos etapas. Este condominio ofrece casas diseñadas para fomentar un estilo de vida responsable y armonioso con el planeta.
+              </p>
+            </div>
+          </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section class="amenities" id="amenities">
+        <h2 class="section-title">Que te ofrecemos:</h2>
+        <div class="amenities-grid">
+            <div class="amenity-column">
+                <h2>FUN.</h2>
+                <ul>
+                    <li>Casa Club</li>
+                    <li>Piscina recreativa</li>
+                    <li>Piscina para niños</li>
+                    <li>Sun Deck de arena</li>
+                    <li>Área Picnic</li>
+                    <li>2 Ranchos BBQ</li>
+                    <li>Área de juegos infantiles</li>
+                    <li>Área de juegos para mascotas</li>
+                    <li>Cine</li>
+                    <li>Cafetería</li>
+                    <li>Salón de Juegos</li>
+                </ul>
+            </div>
+            <div class="amenity-column">
+                <h2>SPORT.</h2>
+                <ul>
+                    <li>Carril de nado</li>
+                    <li>Indoor gym</li>
+                    <li>MultiFit</li>
+                    <li>Outdoor gym</li>
+                    <li>Running track</li>
+                </ul>
+            </div>
+            <div class="amenity-column">
+                <h2>ZEN.</h2>
+                <ul>
+                    <li>Área de yoga</li>
+                    <li>Fire Pit</li>
+                    <li>Jacuzzi</li>
+                </ul>
+            </div>
+            <div class="amenity-column align-bottom">
+                <p>Hemos conceptualizado cada una de ellas para brindarte un equilibrio mental, físico y emocional. Así podrás disfrutar de una experiencia de vida plena en tu nuevo hogar.</p>
+                <a href="Cotiza Amenidades" class="amen-button">COTIZA AQUI</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get the link for "Amenidades"
+            const amenidadesLink = document.querySelector('a[href="#amenities"]');
+            const sobreNosotrosLink = document.querySelector('a[href="#about"]');
+    
+            // Scroll effect for "Amenidades"
+            amenidadesLink.addEventListener("click", function (e) {
+                e.preventDefault(); // Prevent the default jump behavior
+    
+                // Get the target section (Amenidades section)
+                const targetSection = document.querySelector("#amenities");
+    
+                // Scroll to the target section, but offset by 50px
+                window.scrollTo({
+                    top: targetSection.offsetTop - 50, // Scroll to 50px above the target
+                    behavior: "smooth" // Smooth scrolling
+                });
+            });
+    
+            // Scroll effect for "Sobre Nosotros"
+            sobreNosotrosLink.addEventListener("click", function (e) {
+                e.preventDefault(); // Prevent the default jump behavior
+    
+                // Get the target section (Sobre Nosotros section)
+                const targetSection = document.querySelector("#about");
+    
+                // Scroll to the target section, but offset by 50px
+                window.scrollTo({
+                    top: targetSection.offsetTop - 50, // Scroll to 50px above the target
+                    behavior: "smooth" // Smooth scrolling
+                });
+            });
+        });
+    </script>
+
+    <!-- Feature Image Section with Vertical Text -->
+    <section class="feature-image">
+        <div class="feature-image-wrapper">
+            <div class="vertical-text">AMENIDADES</div>
+            
+            <div class="slideshow-container">
+                <div class="slide">
+                    <img src="https://i.postimg.cc/L8k5MQLW/Naala-Entrada.png" alt="Entrada de Naala" />
+                </div>
+                <div class="slide fade">
+                    <img src="https://i.postimg.cc/8PRrmmtT/Naala-Rancho.png" alt="Rancho Exterior 1" />
+                </div>
+                <div class="slide fade">
+                    <img src="https://i.postimg.cc/pXbFj6Q0/Naala-Rancho-2.png" alt="Rancho Exterior 2" />
+                </div>
+                <div class="slide fade">
+                    <img src="https://i.postimg.cc/QdjK4Ky1/Naala-Rancho-3.png" alt="Rancho Interior" />
+                </div>
+            </div>
+        </div>
+    </section>
+  
+    <!-- JS for the Slideshow -->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+    </script>
+
+    <!-- Stats Section -->
+    <section class="stats" id="about">
+        <div class="stats-heading">
+            <div class="marquee">
+              <div class="track">
+                <span>URBANIA • URBANIA • URBANIA • URBANIA • URBANIA • URBANIA • URBANIA • URBANIA • URBANIA • URBANIA • URBANIA • URBANIA • URBANIA • URBANIA • URBANIA • URBANIA • URBANIA • URBANIA • URBANIA • URBANIA • URBANIA • URBANIA • URBANIA • URBANIA • </span>
+              </div>
+            </div>
+          </div>                             
+        <div class="stats-grid">
+            <div class="stat-box">
+                <div class="stat-number">12+</div>
+                <div class="stat-label">Años Construyendo</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">6</div>
+                <div class="stat-label">Proyectos en Desarollo</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">1300+</div>
+                <div class="stat-label">Unidades Habitacionales</div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get the link for "Sobre Nosotros"
+            const sobreNosotrosLink = document.querySelector('a[href="#about"]');
+    
+            sobreNosotrosLink.addEventListener("click", function (e) {
+                e.preventDefault(); // Prevent the default jump behavior
+    
+                // Get the target section (Stats section)
+                const targetSection = document.querySelector("#about");
+    
+                // Scroll to the target section, but offset by 50px
+                window.scrollTo({
+                    top: targetSection.offsetTop - 50, // Scroll to 50px above the target
+                    behavior: "smooth" // Smooth scrolling
+                });
+            });
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-left">
+            <div class="footer-logo">Naala</div>
+            <div class="footer-links">
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Declaración de accesibilidad</a>
+            </div>
+            
+            <div class="location-section">
+                <div class="location-title">Ubicación</div>
+                <div class="location-info">
+                    <p>Ruta 119, Heredia, Santa</p>
+                    <p>Bárbara, 40401</p>
+                </div>
+            </div>
+            
+            <div class="contact-section">
+                <div class="contact-title">Contacto</div>
+                <div class="contact-info">
+                    <p>@naalaheredia</p>
+                    <p>+506 8677-1120</p>
+                </div>
+            </div>
+            
+            <div class="footer-nav">
+                <a href="#amenities">Amenidades</a>
+                <a href="#about">Sobre Nosotros</a>
+                <a href="#models">Modelos</a>
+            </div>
+            
+            <div class="copyright">© 2025 by Max Ringnalda</div>
+        </div>
+        <div class="footer-right">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d982.2442043421058!2d-84.1593409663845!3d10.018771534470243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fb7fa497690f%3A0x5683d09c534e44d9!2sNaala!5e0!3m2!1ses-419!2scr!4v1744666142724!5m2!1ses-419!2scr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Animation from Homepage to Modelos-->
+    <script>
+        const modelosLink = document.getElementById('modelos-link');
+      
+        modelosLink.addEventListener('click', function (e) {
+          e.preventDefault(); // Stop immediate navigation
+          document.body.classList.add('fade-out');
+      
+          setTimeout(() => {
+            window.location.href = 'modelos.html';
+          }, 400); // Match the fade-out duration
+        });
+      </script>
+
+</body>
+</html>
